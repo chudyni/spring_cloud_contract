@@ -1,0 +1,18 @@
+name: "should Create a book"
+request:
+  method: POST
+  url: /api/books
+  body:
+    isbn: "123"
+    author: "Jarek"
+    title: "Piwerko i Socjal"
+  headers:
+    Content-Type: application/json
+response:
+  status: 201
+  body:
+    isbn: "123"
+    author: "Jarek"
+    title: "Piwerko i Socjal"
+  headers:
+    Content-Type: application/json
