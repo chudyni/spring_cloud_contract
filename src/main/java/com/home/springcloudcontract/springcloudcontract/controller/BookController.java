@@ -21,7 +21,7 @@ public class BookController {
             method = RequestMethod.POST,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.CREATED)
     public Book createBook(@RequestBody Book book) {
         return this.bookService.createNew(book);
     }
